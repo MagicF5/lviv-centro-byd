@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/app.js"></script>
+    <script src="https://kit.fontawesome.com/533b36f6bd.js" crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLkAgMI-u3bYm7a-sT_SrajM1JQfKMov4&callback=initMap"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container container-navigation">
+        <div class="navigation">
+            <a href="" class="logo">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="navigation__burger"></div>
+            <div class="navigation__nav">
+                <a href="" class="navigation__link">Головна</a>
+                <a href="" class="navigation__link">Про нас</a>
+                <a href="" class="navigation__link">Продаж</a>
+                <a href="" class="navigation__link">Оренда</a>
+                <a href="" class="navigation__link">Контакти</a>
+            </div>
+            <span class="navigation__contact">(032) 123 45 67</span>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner__column">
+            <div class="banner__items">
+                <img class="banner__img" src="images/291891-P6RE4R-27.png" alt="">
+                <p class="banner__title banner__title_left-col">Відчуй <span class="banner__title_bold">затишок</span> <br> свого <span class="banner__title_bold">дому</span></p>
+                <span class="banner__text">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.</span>
+            </div>
+            <div class="banner__items">
+                <a href="" class="banner__button banner__button_pos"></a>
+                <img class="banner__img" src="images/O9ZJQ20.png" alt="">
+                <p class="banner__title banner__title_left-col">На тебе чекає <br> <span class="banner__title_bold">твоя</span> квартира</p>          
+            </div>
+        </div>
+        <div class="banner__column">
+            <div class="banner__items">
+                <img class="banner__img" src="images/kara-eads-L7EwHkq1B2s-unsplash.png" alt="">
+                <p class="banner__title banner__title_right-col">Львівцентробуд - <br> обири <span class="banner__title_bold">найкраще</span> для <span class="banner__title_bold">себе</span></p>
+            </div>
+            <div class="banner__items">
+                <img class="banner__img" src="images/hannah-busing-U-k6XLlml1I-unsplash.png" alt="">
+                <p class="banner__title banner__title_right-col">Затишний <span class="banner__title_bold">ремонт</span> <br> в <span class="banner__title_bold">вашій</span> квартирі</p>
+            </div>
+        </div>
+    </div>
+    <aside>
+        <div class="container">
+            <div class="about-us">
+                <span class="about-us__title">Про нас</span>
+                <div class="about-us__row">
+                    <div class="about-us__box ">
+                        <span class="about-us__box_text">Понад</span>
+                        <span class="about-us__box_number">700</span>
+                        <span class="about-us__box_text">сімей живе в наших квартирах</span>
+                    </div>
+                    <div class="about-us__box">
+                        <span class="about-us__box_text">Компанія "Львівцентробуд"</span>
+                        <span class="about-us__box_number">14</span>
+                        <span class="about-us__box_text">років на ринку житла</span>
+                    </div>
+                    <div class="about-us__box">
+                        <span class="about-us__box_text">Понад </span>
+                        <span class="about-us__box_number">900</span>
+                        <span class="about-us__box_text">м2 здано в оренду</span>
+                    </div>
+                </div>
+                <div class="about-us__row"> 
+                    <div class="about-us__box">
+                        <span class="about-us__box_text">Щодня</span>
+                        <span class="about-us__box_number">150</span>
+                        <span class="about-us__box_text">людей працюють на наших об'єктах</span>
+                    </div>
+                    <div class="about-us__box">
+                        <span class="about-us__box_text">Продано</span>
+                        <span class="about-us__box_number">600 000</span>
+                        <span class="about-us__box_text">м2 житлових площ</span>
+                    </div>
+                    <div class="about-us__box">
+                        <span class="about-us__box_text">Продано</span>
+                        <span class="about-us__box_number">1000</span>
+                        <span class="about-us__box_text">м2 комерційних площ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="container">
+        <div class="sales">
+            <span class="sales__title sales__title_marg">Продаж</span>
+            <div class="sales__box">
+                <div class="sales__inner sales__inner_marg">
+                    <img src="images/byd1.png" alt="">
+                    <div class="sales-info">
+                        <div class="sales-info__row">
+                            <span class="sales-info__name">ЖК ШЕНГЕН</span>
+                            <span class="sales-info__row sales-info__row_style">від 13 547 грн/м2</span>
+                        </div>
+                        <div class="sales-info__row ">
+                            <img class="sales-info__icon" src="icons/icon1.png" alt="">
+                            <span class="sales-info__row_style">48  м2;</span>
+                            <span class="sales-info__row_style">62  м2;</span>
+                            <span class="sales-info__row_style">80  м2;</span>
+                            <span class="sales-info__row_style">102  м2;</span>
+                        </div>
+                        <div class="sales-info__row">
+                            <img class="sales-info__icon sales-info__icon_marg" src="icons/icon2.png" alt="">
+                            <span class="sales-info__row_style">вул. Шевченка, 87Б</span>
+                        </div>
+                        <div class="sales-info__row">
+                            <img class="sales-info__icon sales-info__icon_marg" src="icons/icon3.png" alt="">
+                            <span class="sales-info__row_style">Шевченківський район</span>
+                        </div>
+                        <a href class="sales-info__button" href="">зв’язатися з нами</a>
+                    </div>
+                </div>
+                <div class="sales__inner sales__inner_marg">
+                    <img src="images/byd2.png" alt="">
+                    <div class="sales-info">
+                        <div class="sales-info__row">
+                            <span class="sales-info__name">ЖК ШЕНГЕН</span>
+                            <span class="sales-info__row sales-info__row_style">від 13 547 грн/м2</span>
+                        </div>
+                        <div class="sales-info__row ">
+                            <img class="sales-info__icon" src="icons/icon1.png" alt="">
+                            <span class="sales-info__row_style">48  м2;</span>
+                            <span class="sales-info__row_style">62  м2;</span>
+                            <span class="sales-info__row_style">80  м2;</span>
+                            <span class="sales-info__row_style">102  м2;</span>
+                        </div>
+                        <div class="sales-info__row">
+                            <img class="sales-info__icon sales-info__icon_marg" src="icons/icon2.png" alt="">
+                            <span class="sales-info__row_style">вул. Шевченка, 87Б</span>
+                        </div>
+                        <div class="sales-info__row">
+                            <img class="sales-info__icon sales-info__icon_marg" src="icons/icon3.png" alt="">
+                            <span class="sales-info__row_style">Шевченківський район</span>
+                        </div>
+                        <a href class="sales-info__button" href="">зв’язатися з нами</a>
+                    </div>
+                </div>
+                <div class="sales__inner">
+                    <img src="images/byd3.png" alt="">
+                    <div class="sales-info">
+                        <div class="sales-info__row">
+                            <span class="sales-info__name">ЖК ШЕНГЕН</span>
+                            <span class="sales-info__row sales-info__row_style">від 13 547 грн/м2</span>
+                        </div>
+                        <div class="sales-info__row ">
+                            <img class="sales-info__icon" src="icons/icon1.png" alt="">
+                            <span class="sales-info__row_style">48  м2;</span>
+                            <span class="sales-info__row_style">62  м2;</span>
+                            <span class="sales-info__row_style">80  м2;</span>
+                            <span class="sales-info__row_style">102  м2;</span>
+                        </div>
+                        <div class="sales-info__row">
+                            <img class="sales-info__icon sales-info__icon_marg" src="icons/icon2.png" alt="">
+                            <span class="sales-info__row_style">вул. Шевченка, 87Б</span>
+                        </div>
+                        <div class="sales-info__row">
+                            <img class="sales-info__icon sales-info__icon_marg" src="icons/icon3.png" alt="">
+                            <span class="sales-info__row_style">Шевченківський район</span>
+                        </div>
+                        <a href class="sales-info__button" href="">зв’язатися з нами</a>
+                    </div>
+                </div>
+                <div class="sales__inner">
+                    <img src="images/byd4.png" alt="">
+                    <div class="sales-info">
+                        <div class="sales-info__row">
+                            <span class="sales-info__name">ЖК ШЕНГЕН</span>
+                            <span class="sales-info__row sales-info__row_style">від 13 547 грн/м2</span>
+                        </div>
+                        <div class="sales-info__row ">
+                            <img class="sales-info__icon" src="icons/icon1.png" alt="">
+                            <span class="sales-info__row_style">48  м2;</span>
+                            <span class="sales-info__row_style">62  м2;</span>
+                            <span class="sales-info__row_style">80  м2;</span>
+                            <span class="sales-info__row_style">102  м2;</span>
+                        </div>
+                        <div class="sales-info__row">
+                            <img class="sales-info__icon sales-info__icon_marg" src="icons/icon2.png" alt="">
+                            <span class="sales-info__row_style">вул. Шевченка, 87Б</span>
+                        </div>
+                        <div class="sales-info__row">
+                            <img class="sales-info__icon sales-info__icon_marg" src="icons/icon3.png" alt="">
+                            <span class="sales-info__row_style">Шевченківський район</span>
+                        </div>
+                        <a href class="sales-info__button" href="">зв’язатися з нами</a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="sales__button ">дивитись більше</a>
+        </div>
+    </div>
+    <aside>
+        <div class="container">
+            <div class="rent">
+                <span class="rent__title rent__title_marg">оренда</span>
+                <div class="rent__box">
+                    <div class="rent__inner rent__inner_marg">
+                        <img src="images/byd1.png" alt="">
+                        <div class="rent-info">
+                            <div class="rent-info__row">
+                                <span class="rent-info__name">ЖК ШЕНГЕН</span>
+                                <span class="rent-info__row rent-info__row_style">від 13 547 грн/м2</span>
+                            </div>
+                            <div class="rent-info__row ">
+                                <img class="rent-info__icon" src="icons/icon1.png" alt="">
+                                <span class="rent-info__row_style">48  м2;</span>
+                                <span class="rent-info__row_style">62  м2;</span>
+                                <span class="rent-info__row_style">80  м2;</span>
+                                <span class="rent-info__row_style">102  м2;</span>
+                            </div>
+                            <div class="rent-info__row">
+                                <img class="rent-info__icon rent-info__icon_marg" src="icons/icon2.png" alt="">
+                                <span class="rent-info__row_style">вул. Шевченка, 87Б</span>
+                            </div>
+                            <div class="rent-info__row">
+                                <img class="rent-info__icon rent-info__icon_marg" src="icons/icon3.png" alt="">
+                                <span class="rent-info__row_style">Шевченківський район</span>
+                            </div>
+                            <a href class="rent-info__button" href="">зв’язатися з нами</a>
+                        </div>
+                    </div>
+                    <div class="rent__inner rent__inner_marg">
+                        <img src="images/byd2.png" alt="">
+                        <div class="rent-info">
+                            <div class="rent-info__row">
+                                <span class="rent-info__name">ЖК ШЕНГЕН</span>
+                                <span class="rent-info__row rent-info__row_style">від 13 547 грн/м2</span>
+                            </div>
+                            <div class="rent-info__row ">
+                                <img class="rent-info__icon" src="icons/icon1.png" alt="">
+                                <span class="rent-info__row_style">48  м2;</span>
+                                <span class="rent-info__row_style">62  м2;</span>
+                                <span class="rent-info__row_style">80  м2;</span>
+                                <span class="rent-info__row_style">102  м2;</span>
+                            </div>
+                            <div class="rent-info__row">
+                                <img class="rent-info__icon rent-info__icon_marg" src="icons/icon2.png" alt="">
+                                <span class="rent-info__row_style">вул. Шевченка, 87Б</span>
+                            </div>
+                            <div class="rent-info__row">
+                                <img class="rent-info__icon rent-info__icon_marg" src="icons/icon3.png" alt="">
+                                <span class="rent-info__row_style">Шевченківський район</span>
+                            </div>
+                            <a href class="rent-info__button" href="">зв’язатися з нами</a>
+                        </div>
+                    </div>
+                    <div class="rent__inner">
+                        <img src="images/byd3.png" alt="">
+                        <div class="rent-info">
+                            <div class="rent-info__row">
+                                <span class="rent-info__name">ЖК ШЕНГЕН</span>
+                                <span class="rent-info__row rent-info__row_style">від 13 547 грн/м2</span>
+                            </div>
+                            <div class="rent-info__row ">
+                                <img class="rent-info__icon" src="icons/icon1.png" alt="">
+                                <span class="rent-info__row_style">48  м2;</span>
+                                <span class="rent-info__row_style">62  м2;</span>
+                                <span class="rent-info__row_style">80  м2;</span>
+                                <span class="rent-info__row_style">102  м2;</span>
+                            </div>
+                            <div class="rent-info__row">
+                                <img class="rent-info__icon rent-info__icon_marg" src="icons/icon2.png" alt="">
+                                <span class="rent-info__row_style">вул. Шевченка, 87Б</span>
+                            </div>
+                            <div class="rent-info__row">
+                                <img class="rent-info__icon rent-info__icon_marg" src="icons/icon3.png" alt="">
+                                <span class="rent-info__row_style">Шевченківський район</span>
+                            </div>
+                            <a href class="rent-info__button" href="">зв’язатися з нами</a>
+                        </div>
+                    </div>
+                    <div class="rent__inner">
+                        <img src="images/byd4.png" alt="">
+                        <div class="rent-info">
+                            <div class="rent-info__row">
+                                <span class="rent-info__name">ЖК ШЕНГЕН</span>
+                                <span class="rent-info__row rent-info__row_style">від 13 547 грн/м2</span>
+                            </div>
+                            <div class="rent-info__row ">
+                                <img class="rent-info__icon" src="icons/icon1.png" alt="">
+                                <span class="rent-info__row_style">48  м2;</span>
+                                <span class="rent-info__row_style">62  м2;</span>
+                                <span class="rent-info__row_style">80  м2;</span>
+                                <span class="rent-info__row_style">102  м2;</span>
+                            </div>
+                            <div class="rent-info__row">
+                                <img class="rent-info__icon rent-info__icon_marg" src="icons/icon2.png" alt="">
+                                <span class="rent-info__row_style">вул. Шевченка, 87Б</span>
+                            </div>
+                            <div class="rent-info__row">
+                                <img class="rent-info__icon rent-info__icon_marg" src="icons/icon3.png" alt="">
+                                <span class="rent-info__row_style">Шевченківський район</span>
+                            </div>
+                            <a href class="rent-info__button" href="">зв’язатися з нами</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="rent__button ">дивитись більше</a>
+            </div>
+        </div>
+    </aside>
+    <div class="contacts">
+        <div class="contacts__title">контакти</div>
+        <div class="contacts__row">
+            <div id="contacts__map"></div>
+            <div class="contacts__info">
+                <div class="contacts__address">
+                    <span class="contacts__style">м.Львів, вул. Лазаренка, 1;</span>
+                    <span class="contacts__style">м.Львів, вул. Зелена, 115Д</span>
+                </div>
+                <div class="contacts__phone">
+                    <span class="contacts__style">067 343 25 23</span>
+                    <span class="contacts__style ">067 370 10 90</span>
+                </div>
+                <div class="contacts__social">
+                    <span class="contacts__style">098 167 03 30</span>
+                    <span class="contacts__style">lvivcentrobud@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="bottom-info">
+                <div class="bottom-info__rights">
+                    <a href="" class="bottom-info__logo">
+                        <img src="images/logo.png" alt="logo">
+                    </a> 
+                    <span class="contacts__style">© 2003-2019 КН РІЕЛ. Всі права захищено.</span>
+                </div>
+                <div class="bottom-info__navigation">
+                    <a href="" class="navigation__link bottom-info__link">Головна</a>
+                    <a href="" class="navigation__link bottom-info__link">Про нас</a>
+                    <a href="" class="navigation__link bottom-info__link">Продаж</a>
+                    <a href="" class="navigation__link bottom-info__link">Оренда</a>
+                    <a href="" class="navigation__link bottom-info__link">Контакти</a>
+                </div>
+                <div class="bottom-info__contacts">
+                    <h1 class="bottom-info__title">Офіси продажів:</h1>          
+                        <span class="contacts__style bottom-info__contacts_marg">м.Львів, вул. Лазаренка, 1;</span>
+                        <span class="contacts__style bottom-info__contacts_marg">м.Львів, вул. Зелена, 115Д</span>
+                        <span class="contacts__style bottom-info__contacts_marg">067 343 25 23</span>
+                        <span class="contacts__style bottom-info__contacts_marg ">067 370 10 90</span>
+                        <span class="contacts__style bottom-info__contacts_marg">098 167 03 30</span>
+                        <span class="contacts__style bottom-info__contacts_marg">lvivcentrobud@gmail.com</span>       
+                </div>
+            </div>
+        </div>
+    </footer>
+    <code>
+        clicking on ".navigation__burger" toggles class ".navigation__nav_mobile" on ".navigation__nav"
+        clicking on ".navigation__burger" toggles class ".navigation__burger_active" on ".navigation__burger"
+    </code>
+</body>
+</html>
