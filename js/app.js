@@ -15,4 +15,3 @@ function initMap() {
     var marker = new google.maps.Marker({position: zelena, map: map});
     var marker = new google.maps.Marker({position: lazarenka, map: map});   
   }
-  

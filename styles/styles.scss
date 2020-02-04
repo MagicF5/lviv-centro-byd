@@ -64,12 +64,12 @@
         position: fixed;
         width: 100%;
         padding: 5px 15px;
-        background-color: rgba(52, 52, 52, 0.3);
-    }   
+        background-color:rgba(255, 255, 255, 0.8);
+    }
 
     @media (max-width: 576px) {
         height: 50px;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
 
     &__burger {
@@ -140,7 +140,7 @@
         justify-content: flex-start;
         width: 180px;
         height: 100%;
-        background-color: rgba(52, 52, 52, 0.6);
+        background-color:rgba(255, 255, 255, 0.8);
         top: 0;
         right: 0;
         margin-right: 0;
@@ -163,9 +163,10 @@
         }
 
         @media (max-width: 768px) {
-            color: $white-font-color;
+            color: $main-black-color;
             margin-bottom: 30px;
-            }
+            font-size: 15px;
+        }
     }
 
     &__contact {
@@ -183,8 +184,8 @@
 }
 
 .logo {
-    @media (max-width: 576px) {
-        display: none;
+    &__img {
+        max-width: 50%;
     }
 }
 
@@ -193,16 +194,21 @@
 
 .banner {
     display: flex;
-
+    flex-direction: row;
+    position: relative;
     @media (max-width: 1030px) {
         flex-direction: column;
         }
+        
+    @media (max-width: 768px) {
+        padding-top: 50px;
+    }
 
     &__column {
         display: flex;
         flex-direction: column;
     
-        &:first-child {
+        &:nth-child(1) {
             width: 56%;
     
             @media (max-width: 1030px) {
@@ -210,7 +216,7 @@
                 }
         }
     
-        &:last-child {
+        &:nth-child(2) {
             width: 44.8%;
     
             @media (max-width: 1030px) {
@@ -306,15 +312,23 @@
             display: none;
             } 
     }
+}
 
-    &__button {
+#banner-button {
         position: absolute;
         width: 45px;
         height: 45px;
+        right: calc(50% - 22.5px);
+        bottom: 4%;
         border: 1px solid rgba(192,192,192,0.3);
         transition: all  0.3s ease-in-out;
         border-radius: 50%;
         z-index: 98;
+
+        @media (max-width: 810px) {
+            right: 15px;
+            }
+
         &:hover {
             border-color: $green-color;
         }
@@ -326,8 +340,8 @@
         &::before{
             content: "\f107";
             position: absolute;
-            top: 14.5px;
-            right: 16.5px;
+            top: calc(50% - 5px);
+            right: calc(50% - 5px);
             font-family: FontAwesome;
             color:$white-font-color;
             font-size: 16px;
@@ -345,10 +359,11 @@
                 } 
         }
     }
-}
 
 
 // About-us
+
+
 aside {
     background-color: $grey-bc;
 }
@@ -541,7 +556,14 @@ aside {
         }
     }
 }
-    
+
+sup {
+    color: $main-black-color;
+            font-family: $font-monsterrat;
+            font-size: 10px;
+            font-weight: 400;
+}
+
 .sales-info {
     display: flex;
     flex-direction: column;
@@ -558,8 +580,12 @@ aside {
         justify-content: space-between;
 
         @media (max-width: 576px){
-            flex-direction: column;
-            
+            flex-direction: column;  
+
+            &:last-child {
+                flex-direction: row;
+                justify-content: flex-start;
+            }
         }
 
         &:nth-child(3) {
@@ -580,6 +606,13 @@ aside {
                 margin: 5px 0;
              }
         }
+
+        // &_superscript {
+        //     color: $main-black-color;
+        //     font-family: $font-monsterrat;
+        //     font-size: 10px;
+        //     font-weight: 400;
+        // }
     }
     
     &__name {
@@ -634,7 +667,9 @@ aside {
     
 
     &__icon {
-        max-width: 15px;
+        @media (max-width: 576px) {
+            max-width: 15px;
+        }
 
         &_marg {
             margin-right: 25px;
@@ -773,7 +808,10 @@ aside {
 
         @media (max-width: 576px){
             flex-direction: column;
-            
+            &:last-child {
+                flex-direction: row;
+                justify-content: flex-start;
+            }
         }
 
         &:nth-child(3) {
@@ -955,10 +993,11 @@ footer {
 .bottom-info {
     display: flex;
     justify-content: space-between;
-    padding: 30px 0 30px 0;
+    padding: 30px 0;
 
     @media (max-width: 768px) {
         justify-content: center;
+        padding: 20px 0;
       } 
 
     &__rights, 

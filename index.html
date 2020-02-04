@@ -15,7 +15,7 @@
     <div class="container container-navigation">
         <div class="navigation">
             <a href="" class="logo">
-                <img src="images/logo.png" alt="logo">
+                <img class="logo__img" src="images/logo.png" alt="logo">
             </a>
             <div class="navigation__burger"></div>
             <div class="navigation__nav">
@@ -25,7 +25,7 @@
                 <a href="" class="navigation__link">Оренда</a>
                 <a href="" class="navigation__link">Контакти</a>
             </div>
-            <span class="navigation__contact">(032) 123 45 67</span>
+            <a href="tel:0321234567" class="navigation__contact">(032) 123 45 67</a>
         </div>
     </div>
     <div class="banner">
@@ -36,7 +36,6 @@
                 <span class="banner__text">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.</span>
             </div>
             <div class="banner__items">
-                <a href="" class="banner__button banner__button_pos"></a>
                 <img class="banner__img" src="images/O9ZJQ20.png" alt="">
                 <p class="banner__title banner__title_left-col">На тебе чекає <br> <span class="banner__title_bold">твоя</span> квартира</p>          
             </div>
@@ -51,6 +50,7 @@
                 <p class="banner__title banner__title_right-col">Затишний <span class="banner__title_bold">ремонт</span> <br> в <span class="banner__title_bold">вашій</span> квартирі</p>
             </div>
         </div>
+        <a href="#goto" id="banner-button"></a>
     </div>
     <aside>
         <div class="container">
@@ -94,7 +94,7 @@
         </div>
     </aside>
     <div class="container">
-        <div class="sales">
+        <div class="sales" id="goto">
             <span class="sales__title sales__title_marg">Продаж</span>
             <div class="sales__box">
                 <div class="sales__inner sales__inner_marg">
@@ -102,14 +102,14 @@
                     <div class="sales-info">
                         <div class="sales-info__row">
                             <span class="sales-info__name">ЖК ШЕНГЕН</span>
-                            <span class="sales-info__row sales-info__row_style">від 13 547 грн/м2</span>
+                            <span class="sales-info__row sales-info__row_style">від 13 547 грн/м<sup>2</sup></span>
                         </div>
                         <div class="sales-info__row ">
                             <img class="sales-info__icon" src="icons/icon1.png" alt="">
-                            <span class="sales-info__row_style">48  м2;</span>
-                            <span class="sales-info__row_style">62  м2;</span>
-                            <span class="sales-info__row_style">80  м2;</span>
-                            <span class="sales-info__row_style">102  м2;</span>
+                            <span class="sales-info__row_style">48  м<sup>2</sup>;</span>
+                            <span class="sales-info__row_style">62  м<sup>2</sup>;</span>
+                            <span class="sales-info__row_style">80  м<sup>2</sup>;</span>
+                            <span class="sales-info__row_style">102  м<sup>2</sup>;</span>
                         </div>
                         <div class="sales-info__row">
                             <img class="sales-info__icon sales-info__icon_marg" src="icons/icon2.png" alt="">
@@ -127,14 +127,14 @@
                     <div class="sales-info">
                         <div class="sales-info__row">
                             <span class="sales-info__name">ЖК ШЕНГЕН</span>
-                            <span class="sales-info__row sales-info__row_style">від 13 547 грн/м2</span>
+                            <span class="sales-info__row sales-info__row_style">від 13 547 грн/м<sup>2</sup></span>
                         </div>
                         <div class="sales-info__row ">
                             <img class="sales-info__icon" src="icons/icon1.png" alt="">
-                            <span class="sales-info__row_style">48  м2;</span>
-                            <span class="sales-info__row_style">62  м2;</span>
-                            <span class="sales-info__row_style">80  м2;</span>
-                            <span class="sales-info__row_style">102  м2;</span>
+                            <span class="sales-info__row_style">48  м<sup>2</sup>;</span>
+                            <span class="sales-info__row_style">62  м<sup>2</sup>;</span>
+                            <span class="sales-info__row_style">80  м<sup>2</sup>;</span>
+                            <span class="sales-info__row_style">102  м<sup>2</sup>;</span>
                         </div>
                         <div class="sales-info__row">
                             <img class="sales-info__icon sales-info__icon_marg" src="icons/icon2.png" alt="">
@@ -152,14 +152,14 @@
                     <div class="sales-info">
                         <div class="sales-info__row">
                             <span class="sales-info__name">ЖК ШЕНГЕН</span>
-                            <span class="sales-info__row sales-info__row_style">від 13 547 грн/м2</span>
+                            <span class="sales-info__row sales-info__row_style">від 13 547 грн/м<sup>2</sup></span>
                         </div>
                         <div class="sales-info__row ">
                             <img class="sales-info__icon" src="icons/icon1.png" alt="">
-                            <span class="sales-info__row_style">48  м2;</span>
-                            <span class="sales-info__row_style">62  м2;</span>
-                            <span class="sales-info__row_style">80  м2;</span>
-                            <span class="sales-info__row_style">102  м2;</span>
+                            <span class="sales-info__row_style">48  м<sup>2</sup>;</span>
+                            <span class="sales-info__row_style">62  м<sup>2</sup>;</span>
+                            <span class="sales-info__row_style">80  м<sup>2</sup>;</span>
+                            <span class="sales-info__row_style">102  м<sup>2</sup>;</span>
                         </div>
                         <div class="sales-info__row">
                             <img class="sales-info__icon sales-info__icon_marg" src="icons/icon2.png" alt="">
@@ -177,14 +177,14 @@
                     <div class="sales-info">
                         <div class="sales-info__row">
                             <span class="sales-info__name">ЖК ШЕНГЕН</span>
-                            <span class="sales-info__row sales-info__row_style">від 13 547 грн/м2</span>
+                            <span class="sales-info__row sales-info__row_style">від 13 547 грн/м<sup>2</sup></span>
                         </div>
                         <div class="sales-info__row ">
                             <img class="sales-info__icon" src="icons/icon1.png" alt="">
-                            <span class="sales-info__row_style">48  м2;</span>
-                            <span class="sales-info__row_style">62  м2;</span>
-                            <span class="sales-info__row_style">80  м2;</span>
-                            <span class="sales-info__row_style">102  м2;</span>
+                            <span class="sales-info__row_style">48  м<sup>2</sup>;</span>
+                            <span class="sales-info__row_style">62  м<sup>2</sup>;</span>
+                            <span class="sales-info__row_style">80  м<sup>2</sup>;</span>
+                            <span class="sales-info__row_style">102  м<sup>2</sup>;</span>
                         </div>
                         <div class="sales-info__row">
                             <img class="sales-info__icon sales-info__icon_marg" src="icons/icon2.png" alt="">
@@ -211,14 +211,14 @@
                         <div class="rent-info">
                             <div class="rent-info__row">
                                 <span class="rent-info__name">ЖК ШЕНГЕН</span>
-                                <span class="rent-info__row rent-info__row_style">від 13 547 грн/м2</span>
+                                <span class="rent-info__row rent-info__row_style">від 13 547 грн/м<sup>2</sup></span>
                             </div>
                             <div class="rent-info__row ">
                                 <img class="rent-info__icon" src="icons/icon1.png" alt="">
-                                <span class="rent-info__row_style">48  м2;</span>
-                                <span class="rent-info__row_style">62  м2;</span>
-                                <span class="rent-info__row_style">80  м2;</span>
-                                <span class="rent-info__row_style">102  м2;</span>
+                                <span class="rent-info__row_style">48  м<sup>2</sup>;</span>
+                                <span class="rent-info__row_style">62  м<sup>2</sup>;</span>
+                                <span class="rent-info__row_style">80  м<sup>2</sup>;</span>
+                                <span class="rent-info__row_style">102  м<sup>2</sup>;</span>
                             </div>
                             <div class="rent-info__row">
                                 <img class="rent-info__icon rent-info__icon_marg" src="icons/icon2.png" alt="">
@@ -236,14 +236,14 @@
                         <div class="rent-info">
                             <div class="rent-info__row">
                                 <span class="rent-info__name">ЖК ШЕНГЕН</span>
-                                <span class="rent-info__row rent-info__row_style">від 13 547 грн/м2</span>
+                                <span class="rent-info__row rent-info__row_style">від 13 547 грн/м<sup>2</sup></span>
                             </div>
                             <div class="rent-info__row ">
                                 <img class="rent-info__icon" src="icons/icon1.png" alt="">
-                                <span class="rent-info__row_style">48  м2;</span>
-                                <span class="rent-info__row_style">62  м2;</span>
-                                <span class="rent-info__row_style">80  м2;</span>
-                                <span class="rent-info__row_style">102  м2;</span>
+                                <span class="rent-info__row_style">48  м<sup>2</sup>;</span>
+                                <span class="rent-info__row_style">62  м<sup>2</sup>;</span>
+                                <span class="rent-info__row_style">80  м<sup>2</sup>;</span>
+                                <span class="rent-info__row_style">102  м<sup>2</sup>;</span>
                             </div>
                             <div class="rent-info__row">
                                 <img class="rent-info__icon rent-info__icon_marg" src="icons/icon2.png" alt="">
@@ -261,14 +261,14 @@
                         <div class="rent-info">
                             <div class="rent-info__row">
                                 <span class="rent-info__name">ЖК ШЕНГЕН</span>
-                                <span class="rent-info__row rent-info__row_style">від 13 547 грн/м2</span>
+                                <span class="rent-info__row rent-info__row_style">від 13 547 грн/м<sup>2</sup></span>
                             </div>
                             <div class="rent-info__row ">
                                 <img class="rent-info__icon" src="icons/icon1.png" alt="">
-                                <span class="rent-info__row_style">48  м2;</span>
-                                <span class="rent-info__row_style">62  м2;</span>
-                                <span class="rent-info__row_style">80  м2;</span>
-                                <span class="rent-info__row_style">102  м2;</span>
+                                <span class="rent-info__row_style">48 м<sup>2</sup>;</span>
+                                <span class="rent-info__row_style">62 м<sup>2</sup>;</span>
+                                <span class="rent-info__row_style">80 м<sup>2</sup>;</span>
+                                <span class="rent-info__row_style">102 м<sup>2</sup>;</span>
                             </div>
                             <div class="rent-info__row">
                                 <img class="rent-info__icon rent-info__icon_marg" src="icons/icon2.png" alt="">
@@ -286,14 +286,14 @@
                         <div class="rent-info">
                             <div class="rent-info__row">
                                 <span class="rent-info__name">ЖК ШЕНГЕН</span>
-                                <span class="rent-info__row rent-info__row_style">від 13 547 грн/м2</span>
+                                <span class="rent-info__row rent-info__row_style">від 13 547 грн/м<sup>2</sup></span>
                             </div>
                             <div class="rent-info__row ">
                                 <img class="rent-info__icon" src="icons/icon1.png" alt="">
-                                <span class="rent-info__row_style">48  м2;</span>
-                                <span class="rent-info__row_style">62  м2;</span>
-                                <span class="rent-info__row_style">80  м2;</span>
-                                <span class="rent-info__row_style">102  м2;</span>
+                                <span class="rent-info__row_style">48 м<sup>2</sup>;</span>
+                                <span class="rent-info__row_style">62 м<sup>2</sup>;</span>
+                                <span class="rent-info__row_style">80 м<sup>2</sup>;</span>
+                                <span class="rent-info__row_style">102 м<sup>2</sup>;</span>
                             </div>
                             <div class="rent-info__row">
                                 <img class="rent-info__icon rent-info__icon_marg" src="icons/icon2.png" alt="">
@@ -321,12 +321,12 @@
                     <span class="contacts__style">м.Львів, вул. Зелена, 115Д</span>
                 </div>
                 <div class="contacts__phone">
-                    <span class="contacts__style">067 343 25 23</span>
-                    <span class="contacts__style ">067 370 10 90</span>
+                    <a href="tel:0673432523" class="contacts__style">067 343 25 23</a>
+                    <a href="tel:0673701090" class="contacts__style ">067 370 10 90</a>
                 </div>
                 <div class="contacts__social">
-                    <span class="contacts__style">098 167 03 30</span>
-                    <span class="contacts__style">lvivcentrobud@gmail.com</span>
+                    <a href="tel:0981670330" class="contacts__style">098 167 03 30</a>
+                    <a href="mailto:lvivcentrobud@gmail.com" class="contacts__style">lvivcentrobud@gmail.com</a>
                 </div>
             </div>
         </div>
@@ -351,10 +351,10 @@
                     <h1 class="bottom-info__title">Офіси продажів:</h1>          
                         <span class="contacts__style bottom-info__contacts_marg">м.Львів, вул. Лазаренка, 1;</span>
                         <span class="contacts__style bottom-info__contacts_marg">м.Львів, вул. Зелена, 115Д</span>
-                        <span class="contacts__style bottom-info__contacts_marg">067 343 25 23</span>
-                        <span class="contacts__style bottom-info__contacts_marg ">067 370 10 90</span>
-                        <span class="contacts__style bottom-info__contacts_marg">098 167 03 30</span>
-                        <span class="contacts__style bottom-info__contacts_marg">lvivcentrobud@gmail.com</span>       
+                        <a href="tel:0673432523" class="contacts__style bottom-info__contacts_marg">067 343 25 23</a>
+                        <a href="tel:0673701090" class="contacts__style bottom-info__contacts_marg ">067 370 10 90</a>
+                        <a href="tel:0981670330" class="contacts__style bottom-info__contacts_marg">098 167 03 30</a>
+                        <a href="mailto:lvivcentrobud@gmail.com" class="contacts__style bottom-info__contacts_marg">lvivcentrobud@gmail.com</a>       
                 </div>
             </div>
         </div>
