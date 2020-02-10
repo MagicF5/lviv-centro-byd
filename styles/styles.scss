@@ -2,14 +2,6 @@
 @import "helpers/_layout";
 
 
-.logo {
-	&__img {
-		@media (max-width: 768px) {
-			max-width: 50%;
-		}
-	}
-}
-
 //Banner
 
 .banner {
