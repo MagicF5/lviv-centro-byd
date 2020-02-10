@@ -14,7 +14,7 @@
     $white-font-color:#ffffff;
     $white-bc:#ffffff;
     $grey-bc:#f4f4f4;
-    $font-monsterrat: 'Montserrat', sans-serif;
+    $font-monsterrat: '$font-monsterrat', sans-serif;
 
 // Container
 
@@ -349,16 +349,6 @@
             font-size: 16px;
             opacity: 1;
             transition: all  0.3s ease-in-out;
-        }
-
-        &_pos {
-            right: 0;
-            bottom: 0;
-            margin: 0 40px 20px 0;
-
-            @media (max-width: 768px) {
-                margin: 0 10px 10px 0 ;
-                } 
         }
     }
 
@@ -1039,3 +1029,93 @@ footer {
         margin-bottom: 18px;
     }
 }
+
+
+// Sale.html
+
+.sale-banner {
+    position: relative;
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    background-image: url(../images/O9ZJQ202.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 213px 0 0 166px;
+
+    @media (max-width: 768px) {
+        padding: 213px 0 0 50px;
+      }
+
+    @media (max-width: 576px) {
+        padding: 100px 15px;
+        height: 300px;
+        text-align: center;
+        }
+    
+    &__title {
+        color: $white-font-color;
+        font-family: $font-monsterrat;
+        font-size: 22px;
+        font-weight: 400;
+
+        @media (max-width: 576px) {
+            line-height: 30px;
+            }
+        
+        
+        &_bold {
+            color: $white-font-color;
+            font-size: 22px;
+            font-family: $font-monsterrat;
+            font-weight: 700;
+        }
+        
+    }
+
+    &__text {
+        color: #ffffff;
+        font-family: $font-monsterrat;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 23px;
+        margin-top: 80px;
+
+        @media (max-width: 576px) {
+            display: none;
+            }
+    }
+}
+
+#sale-banner-button {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: calc(50% - 22.5px);
+    border: 1px solid rgba(192,192,192,0.3);
+    transition: all  0.3s ease-in-out;
+    border-radius: 50%;
+
+    &:hover {
+        border-color: $green-color;
+    }
+
+    &:hover::before {
+        color: $green-color;
+    }
+
+    &::before{
+        content: "\f107";
+        position: absolute;
+        top: calc(50% - 5px);
+        right: calc(50% - 5px);
+        font-family: FontAwesome;
+        color:$white-font-color;
+        font-size: 16px;
+        opacity: 1;
+        transition: all  0.3s ease-in-out;
+    }
+}
+
